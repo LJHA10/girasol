@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #ffc0cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.girasol {
+    width: 500px;
+    height: 500px;
+    background-image: url('girasol.png');
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    animation: balancearGirasol 7s linear infinite;
+}
+
+.nota {
+    padding-top: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    color: #333;
+}
+
+@keyframes balancearGirasol {
+    0%, 100%, 50% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+}
